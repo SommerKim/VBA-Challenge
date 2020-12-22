@@ -28,6 +28,12 @@ Sub ticker_tracker():
                   end_year = Cells(row_num, 6)
                   yearly_change = end_year - beg_year
                   Summary_Sheet.Range("B" & Summary_Table_Row).Value = yearly_change
+                    If yearly_change < 0 Then
+                    Summary_Sheet.Range("B" & Summary_Table_Row).Interior.ColorIndex = 3
+                    Else: Summary_Sheet.Range("B" & Summary_Table_Row).Interior.ColorIndex = 43
+                    End If
+                  percent_change = (end_year - beg_year) / beg_year
+                  Summary_Sheet.Range("C" & Summary_Table_Row).Value = percent_change
                   Summary_Table_Row = Summary_Table_Row + 1
                   beg_year = Cells(row_num + 1, 3).Value
                   
