@@ -3,4 +3,6 @@ I apologize up front for my commit log being a mess. I was learning how to commi
 
 Clearly, this is a lot to sort through, so I hope you don't need to. :-) The complete and final code that you will need to run in the .xlsm file is VBA_Challenge.vbs. The macro named ticker_tracker is the code to run on each spreadsheet (2014, 2015, 2016) in the workbook in order to create the yearly summaries. The macro named ticker_tracker_summary is the first part of the bonus that will create a summary table of all three years. This macro will create a new worksheet named Summary Sheet, which is where you'll find the results of that summary. If you run the macro named greatest on Summary Sheet, it will create the table for the second part of the bonus.
 
+The .jpg files are named according to the macro that was run in the screenshot.
+
 I hope this explanation clears some things up. Thanks for understanding my learning mistakes with Github-- I hope they are not too confusing!
